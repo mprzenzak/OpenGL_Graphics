@@ -1,20 +1,17 @@
 import math
 import random
-from datetime import time
 
 import numpy as np
-import numpy as numpy
 from glfw.GLFW import *
 
 from OpenGL.GL import *
-from OpenGL.GLU import *
 from OpenGL.GLUT import *
-import OpenGL.GLUT as GLUT
 
 
 def startup():
     update_viewport(None, 400, 400)
     glClearColor(0, 0, 0, 1.0)
+    glEnable(GL_DEPTH_TEST)
 
 
 def update_viewport(window, width, height):
